@@ -6,18 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="numero">
-    <input type="text" id="numero">
+    <input type="texte" id="numero">
     <button onclick="exibeInformacoes()">clik em mim</button>
-    </button>
+</button>
     <script>
         function exibeInformacoes(){
-            var recebe = document.getElementById("numero").value;
-            num = Number (recebe);
-            num = Number (recebe);
-            alert(num + num);
+            var numeroDigitado = document.getElementById("numero").value;
+            var numeroConvertido = Number(numeroDigitado);
+            var resultado = numeroConvertido;
+            var dolar = resultado * 5.76
+            alert(dolar);
+
+
+
+
+
+
+
+
         }
-    </script>
+</script>
     
 </body>
 </html>

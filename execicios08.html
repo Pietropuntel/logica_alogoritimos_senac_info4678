@@ -14,8 +14,13 @@
             var numeroDigitado = document.getElementById("numero").value;
             var numeroConvertido = Number(numeroDigitado);
             var resultado = numeroConvertido;
-            var mm = numeroConvertido
-            alert(mm); 
+            var N_Km = resultado / 1000
+            var N_Hm = resultado / 100
+            var N_Dam = resultado / 10
+            var N_Dm = resultado * 10
+            var N_cm = resultado * 100
+            var N_mm = resultado * 1000
+            alert("A distancia de " + resultado + "m corresponde a : " + N_Km + "Km ," + N_Hm + "Hm ," + N_Dam + "Dam ," + N_Dm + "Dm ," + N_cm + "cm ," + N_mm + "mm," ); 
 
 
 
