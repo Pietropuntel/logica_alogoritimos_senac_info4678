@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="A">
+    <input type="text" id="B">
+    <input type="text" id= "C">
+    <button onclick="exibeInformacoes()">clik em mim</button>
+</button>
+    <script>
+        function exibeInformacoes(){
+            var valorDoA = Number(document.getElementById("A").value);
+            var valorDoB = Number(document.getElementById("B").value);
+            var valorDoC = Number(document.getElementById("C").value);
+            var resultado = (valorDoB * valorDoB) - 4 * valorDoA * valorDoC;
+            alert(resultado);
+        }
+    </script>
+</body>
+</html>
