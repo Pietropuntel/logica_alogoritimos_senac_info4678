@@ -6,16 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="numero">
+    <input type="text" id="numero1">
     <input type="text" id="numero">
     <button onclick="exibeInformacoes()">clik em mim</button>
     </button>
     <script>
         function exibeInformacoes(){
-            var recebe = document.getElementById("numero").value;
-            num = Number (recebe);
-            num = Number (recebe);
-            alert(num + num);
+            var recebe = document.getElementById("numero1").value;
+            var recebe1 = document.getElementById("numero").value;
+            num1 = Number (recebe);
+            num2 = Number (recebe1);
+            var conta = num1 + num2
+            alert("A soma de " + num1 + " e " + num2 + " é igual a " + conta);
         }
     </script>
     
