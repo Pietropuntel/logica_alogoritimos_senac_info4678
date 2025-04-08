@@ -12,8 +12,12 @@
 </button>
     <script>
         function exibeInformacoes(){
-            var valorDoKm = Number(document.getElementById("Km").value);
-            var valorDoDia = Number(document.getElementById("dia").value);
+            var quantosKm = Number(document.getElementById("Km").value);
+            var quantosDias= Number(document.getElementById("dia").value);
+            var conta =  quantosDias * 90;
+            var conta2 = quantosKm * 0.20;
+            var valorDaSoma = conta + conta2;
+        alert(" O valor total a pagar é " + valorDaSoma);
         }
     </script>
 </body>

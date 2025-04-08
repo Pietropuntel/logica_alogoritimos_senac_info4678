@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula de algoritimos</title>
+</head>
+<body>
+    
+    <input type="text" id="VelocidadeDoCarro" value="">
+    <button onclick="VerificarVelocidade()">clik nim mim</button>
+    </button>
+
+    <script>
+        function VerificarVelocidade(){
+            var VelocidadeDoCarro = Number(document.getElementById("VelocidadeDoCarro").value);
+            if(VelocidadeDoCarro > 80){
+            var VelocidadeExcendente = VelocidadeDoCarro - 80;
+            var ValorMulta = VelocidadeExcendente * 5;
+            alert("Você foi multado. Valor à pagar: "+ ValorMulta);
+
+
+        }else{alert ("Parabéns, você está dentro do limite de velocidade permitido!");
+
+        }
+           
+        }
+    </script>
+</body>
+</html>
