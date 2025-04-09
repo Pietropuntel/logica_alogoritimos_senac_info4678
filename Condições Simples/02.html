@@ -6,15 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="VelocidadeDoCarro" value="">
-    <button onclick="VerificarVelocidade()">clik nim mim</button>
+    <input type="text" id="Idade" value="">
+    <button onclick="VerificarIdade()">clik nim mim</button>
     </button>
     <script>
-        function VerificarIdade (){
-            var IdadeDoIndividuo = Number(document.getElementById("VelocidadeDoCarro").value);
-            var calculo =  2025 - IdadeDoIndividuo;
-            if(VelocidadeDoCarro > 18){
-            alert("Você pode votar !");
+        function VerificarIdade(){
+            var IdadeDoIndividuo = Number(document.getElementById("Idade").value);
+            var conta =  2025 - IdadeDoIndividuo;
+            if( conta > 18){
+            alert(  " voce tem "+ conta +" idade " + "Você pode votar !");
             
         }else{alert("voce não pode votar ! ");
             }
