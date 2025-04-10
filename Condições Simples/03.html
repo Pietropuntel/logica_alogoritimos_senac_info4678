@@ -6,6 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="text" id="nome" value="">
+    <input type="text" id="nota" value="">
+    <input type="text" id="nota2" value="">
+    <button onclick="VerificarNota()">clik nim mim</button>
+    </button>
+    <script>
+        function VerificarNota(){
+            var NomeDaLenda = document.getElementById("nome").value;
+            var PrimeiraNota = Number(document.getElementById("nota").value);
+            var SegundaNota = Number(document.getElementById("nota2").value);
+             var PrimeiraNota = nota + nota2; 
+             var SegundaNota = PrimeiraNota/2;
+            if(SegundaNota > 7 ) {
+                alert(NomeDaLenda + " sua nota foi " + SegundaNota + ". parabens");
+
+            }else{ alert( NomeDaLenda + " sua nota foi uma capivara melhore ");
+            
+            
+            }
+
+
+
+
+        }
+    </script>
+
 </body>
 </html>
