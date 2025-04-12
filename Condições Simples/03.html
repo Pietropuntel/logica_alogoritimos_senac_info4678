@@ -15,11 +15,11 @@
         function VerificarNota(){
             var NomeDaLenda = document.getElementById("nome").value;
             var PrimeiraNota = Number(document.getElementById("nota").value);
-            var SegundaNota = Number(document.getElementById("nota2").value);
-             var PrimeiraNota = nota + nota2; 
-             var SegundaNota = PrimeiraNota/2;
-            if(SegundaNota > 7 ) {
-                alert(NomeDaLenda + " sua nota foi " + SegundaNota + ". parabens");
+            var SegundaNota = Number(document.getElementById("nota2").value);    
+            var ResultadoDaPrimeiraNota = PrimeiraNota + SegundaNota; 
+            var ResultadoDaSegundaNota = ResultadoDaPrimeiraNota/2;
+            if(ResultadoDaSegundaNota > 7 ) {
+                alert(NomeDaLenda + " sua nota foi " + ResultadoDaSegundaNota + ". parabens");
 
             }else{ alert( NomeDaLenda + " sua nota foi uma capivara melhore ");
             
