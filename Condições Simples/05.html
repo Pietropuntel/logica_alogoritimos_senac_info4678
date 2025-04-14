@@ -7,7 +7,7 @@
 </head>
 <body>
     <input type="text" id="ano" value="">
-    <button onclick="VerificarNumero()">clik nim mim</button>
+    <button onclick="VerificarNumero()">clik em mim</button>
     </button>
     <script>
         function VerificarNumero(){
@@ -15,12 +15,23 @@
             var conta =  AnoBixessto % 4 
             var conta2 = AnoBixessto % 100
             var conta3 = AnoBixessto % 400
-            if(AnoBixessto == 4);
-            if(AnoBixessto == 100); 
-            if(AnoBixessto == 400){
+
+            if(conta == 4) {
+            }else{alert("este ano " + AnoBixessto + " é Bixessto");
+
+            }
+
+            if(conta2 == 100) {
+            }else{alert("este ano " + AnoBixessto + " é Bixessto");
+
+            }
+
+            if(conta3 == 400){
                 alert("este ano " + AnoBixessto + " é Bixessto");
+
             }else{alert("este ano " + AnoBixessto + " não é Bixessto");
-        }
+            
+            }
 
         }
 
