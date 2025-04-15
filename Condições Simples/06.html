@@ -6,6 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="text" id="Ano" value="">
+    <button onclick="VerificarIdade()">clik em mim</button>
+    </button>
+    <script>
+        function VerificarIdade (){
+            var Ano = Number(document.getElementById("Ano").value);
+            var conta = 2025 - Ano ;
+            var calculo =  18 - conta ;
+            var calculo2 = conta - 18 ;
+            if(conta >= 18 ){
+                if(conta == 18){
+                     alert("Parbens você pode servir mas você já passou " ) 
+                }else{
+                    alert("Parbens você pode servir mas você já passou "+ calculo2 ) 
+                }
+               
+            }else{ alert ("faltam " + calculo + " anos para você servir")
+            }
+
+
+
+
+
+
+        }
+
+
+    </script>
 </body>
 </html>
