@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="Distancia" value="">
+    <button onclick="VerificarDistancia()">clik em mim</button>
+    </button>
+    <script>
+        function VerificarDistancia(){
+            var Distancia  = Number(document.getElementById("Distancia").value) ;
+            var CalculoDe200 = 0.50 * Distancia;
+            var CalculoDeMaisLonge = 0.45 * Distancia;
+            if(Distancia < "200")
+        {
+            alert ("sua viagem vai dar  " + CalculoDe200 );
+        }
+        if(Distancia >= "200" )
+        {
+            alert ("sua vaigem vai dar mais de 200 KM então vai dar  " + CalculoDeMaisLonge)
+        }
+
+
+
+        }
+    </script>
+</body>
+</html>

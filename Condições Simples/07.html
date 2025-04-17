@@ -16,19 +16,18 @@
         function VerificarDesconto(){
             var Nome  = document.getElementById("Nome").value ;
             var Sexo  = document.getElementById("Sexo").value ;
-            var Compras  = document.getElementById("Compras").value ;
-            var calculo = Compras * Sexo /100 ;
-            if(SexoMasculino = 5){
-            
-
-
-
-
+            var Compras  = Number(document.getElementById("Compras").value) ;
+            var CalculoDaMulher = 13 * Compras /100 ;
+            var CalculoDoHomem = 5 * Compras /100;
+            if(Sexo == "Feminino")
+            {
+                alert ("sua compra deu " + CalculoDaMulher);
+            }
+            if(Sexo == "Masculino")
+            {
+                alert("sua conta deu " + CalculoDoHomem);
+            }
         }
-
-
-
-
     </script>
 </body>
 </html>
