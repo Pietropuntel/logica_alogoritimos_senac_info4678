@@ -15,9 +15,23 @@
         function VerificarDistancia(){
             var LetraA = Number(document.getElementById("A").value) ; 
             var LetraB = Number(document.getElementById("B").value) ;
-            var LetraC = Number(document.getElementById("B").value) ;
-            
-
+            var LetraC = Number(document.getElementById("C").value) ;
+            var conta = A + B ;
+            var conta2 = B + C ; 
+            var conta3 = C + A ; 
+            if(conta > "A + B") 
+            {
+                alert("Seu triangulo esta correto, Parabens !!! ")
+            }
+            if(conta2 > "B + C")
+            {
+                alert("seu triangulo esta certo, Parabens !!!")
+            }
+            if(conta3 > "C + A")
+            {
+                alert("seu trinagulo esta certo , Parabens !!!")
+            }else{alert("seu triangulo esta incorreto, infelizmente ")
+            }
         }
     </script>
 </body>
