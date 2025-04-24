@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="numero">
+    <input type="text" id="numero2">
+    <button onclick="exibeInformacoes()">clik em mim</button>
+    </button>
+    <script>
+        function exibeInformacoes(){
+             var numero = document.getElementById("numero").value;
+             var numero2 = document.getElementById("numero2").value;
+            if(numero > numero2) {
+                alert("O primeiro numero é maior ");
+            }else if (numero2 > numero) {
+                alert("O segundo numero é maior");
+            }else{(numero == numero2)
+                alert("os dois numeros são iguais");
+            }
+        }
+    </script>
+</body>
+</html>
