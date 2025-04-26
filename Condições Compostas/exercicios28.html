@@ -15,7 +15,14 @@
             var largura = document.getElementById("largura").value;
             var comprimento = document.getElementById("comprimento").value;
             var calculo = largura * comprimento;
-            if(calculo >=  100 )
+            if(calculo  <= 100 ){
+                alert("seu terreno é popular");
+            }else if  (calculo >= 100 && calculo < 500){
+                alert("você tem um terreno master");
+            }else{
+                alert("seu terreno é vip");
+            } 
+
 
 
         }

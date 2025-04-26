@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nome">
+    <input type="text" id="salario">
+    <input type="text" id="anosDeServiso">
+    <button onclick="exibeInformacoes()">clik em mim</button>
+    </button>
+    <script>
+         function exibeInformacoes(){
+            var nome = document.getElementById("nome").value;
+            var salario = document.getElementById("salario").value;
+            var anosDeServiso = document.getElementById("anosDeServiso").value;
+            var calculo = (salario * 0.03) + salario
+            var calculo2 = (salario * 0.125) + salario
+            var calculo3 = (salario * 0.20) + salario
+            if(calculo <= 3 ){
+                alert("olá " + nome +" você teve " + anosDeServiso + " anos de serviso " + calculo);
+            }else if (calculo2 > 3 && calculo2 < 10){
+                alert("olá " + nome +" você teve " + anosDeServiso + " anos de serviso " + calculo2 );
+            }else{
+                alert("olá " + nome +" você teve " + anosDeServiso + " anos de serviso " + calculo3 );
+            }
+        }
+    </script>
+</body>
+</html>
