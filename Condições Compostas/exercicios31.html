@@ -6,6 +6,46 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="text" id="nome" value="">
+    <input type="text" id="nome2" value="">
+    <button onclick="VerificarJogador()">clik em mim</button>
+    </button>
+    <script>
+        function VerificarJogador(){
+            var nome = (document.getElementById("nome").value);
+            var nome2 = (document.getElementById("nome2").value); 
+            
+            if ("papel" == nome2 && "pedra" == nome ){
+                alert("papel ganhou da pedra, jogador 2 ganhou");
+
+            }else if ("pedra" == nome2 && "tesoura" == nome){
+                alert("pedra ganhou da tesoura, jogador 2 ganhou");
+
+            }else if ("tesoura" == nome2 && "papel" == nome) {
+                alert("tesoura ganhou do papel, jogador 2 ganhou");
+
+            }else if ("papel" == nome2 && "pedra" == nome ) {
+                alert("papel ganhou da pedra, jogador 1 ganhou");
+
+            }else if ("papel" == nome2 && "tesoura" == nome) {
+                alert("tesoura ganhou do papel, jogador 1 ganhou");
+
+            }else if ("papel" == nome2 && "tesoura" == nome){
+                alert("tesoura ganhou do papel, jogador 1 ganhou");
+
+            }else if ( nome2 == nome ){
+                alert("empate");
+            }
+                
+
+
+
+         }
+
+
+
+
+        
+    </script>
 </body>
 </html>
