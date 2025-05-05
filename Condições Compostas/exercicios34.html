@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="Altura" value="">
+    <input type="text" id="Peso" value="">
+    <button onclick="VerificarNumero()">clik em mim</button>
+    </button>
+    <script>
+         function VerificarNumero(){
+            var Altura = parseFloat(document.getElementById("Altura").value);
+            var Peso = parseFloat(document.getElementById("Peso").value);
+            var calculo = Peso / (Altura * Altura);
+            if (calculo <= 18.5 ){
+                alert("Abaixo do Peso");
+
+            }else if (calculo > 18.5 && calculo <= 25){
+                alert("Peso Ideal");
+
+            }else if (calculo > 25 && calculo <= 30 ) {
+                alert("Sobre Peso");
+
+            }else if (calculo > 30 && calculo <= 40){
+                alert("Obesidade");
+
+            }else if (calculo > 40){
+                alert("Obsidade Morbida");
+            }
+
+            
+         }
+        
+    </script>
+</body>
+</html>

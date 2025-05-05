@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="numero" value="">
+    <button onclick="VerificarNumeroSorteado()">clik em mim</button>
+    </button>
+    <script>
+        function VerificarNumeroSorteado (){
+            var NumeroDigitado = document.getElementById("numero").value;
+            var NumeroSorteado = Math.floor(Math.random() * 5) + 1;
+            var tentativas = 0; 
+            var acertou = false; 
+            if (NumeroDigitado == NumeroSorteado){
+                alert("Parabens, Você acertou o número sorteado " + NumeroSorteado);
+            }else {
+                alert("Você errou o número sorteado, tente novamente");
+            }
+        } 
+    </script>
+</body>
+</html>

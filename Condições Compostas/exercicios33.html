@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="ValorCasa" value="">
+    <input type="text" id="SalarioComprador" value="">
+    <input type="text" id="AnosApagar" value="">
+    <button onclick="VerificarNumero()">clik em mim</button>
+    </button>
+    <script>
+        function VerificarNumero() {
+            var ValorCasa = parseFloat(document.getElementById("ValorCasa").value);
+            var SalarioComprador = parseFloat(document.getElementById("SalarioComprador").value);
+            var AnosApagar = parseFloat (document.getElementById("AnosApagar").value);
+            var MesesApagar = AnosApagar * 12;
+            var Prestacao = ValorCasa / MesesApagar;
+            var SalarioMinimo = 0.3 * SalarioComprador;
+            if(Prestacao > SalarioMinimo){
+                alert("seu emprestimo foi negado");
+            }else{
+                alert("seu emprestimo esta autorizado");
+            }
+      
+
+ 
+        }
+    </script>
+</body>
+</html>
