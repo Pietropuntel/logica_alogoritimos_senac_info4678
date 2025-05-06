@@ -8,17 +8,25 @@
 <body>
     <input type="text" id="Dias" value="">
     <input type="text" id="Km" value="">
+    <button onclick="VerificarCarro()">clik em mim</button>
+    </button>
     <script>
         function VerificarCarro(){
             var Dias = parseFloat(document.getElementById("Dias").value);
             var Km = parseFloat(document.getElementById("Km").value); 
+            // carro deo luxo
             var calculodias = Dias * 150;
+            // carro comum
             var calculosDias = Dias * 90;
+            // carro comum
             var calculokm = Km * 0.20;
             var calculokm2 = Km * 0.10;
+            // carro de luxo
             var calculoKm = Km * 0.30;
             var calculoKm2 = Km * 0.25;
-            if ()
+            if ("Carro Comum " == calculosDias && Km > 100 == calculokm ){
+                alert("pelo visto voce pegou um carro comum, voce rodou " + Km + " Kilometros" + "voce devera pagar" + calculokm );
+            }
 
 
         
