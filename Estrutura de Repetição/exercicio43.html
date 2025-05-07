@@ -7,16 +7,17 @@
 </head>
 <body>
     <script>
+       
         window.onload = function(){
             var TodosOsNumeros = "";
-            var teste = prompt("digite um numero");
-            console.log(TodosOsNumeros);
-            for(var i = 1; i <= teste ; i ++ ) {        
-                TodosOsNumeros = TodosOsNumeros + " " + i; 
-            } 
+            for(var i = 1; i >= 30 ; i -= 1){
+
+                 TodosOsNumeros = TodosOsNumeros + i + " ";
+            }
 
             console.log(TodosOsNumeros + " Acabou!");
         }
+   
     </script>
 </body>
 </html>
