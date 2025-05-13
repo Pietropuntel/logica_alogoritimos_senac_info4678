@@ -12,10 +12,13 @@
             var pos = parseInt(prompt("digite o primeiro numero"));
             var teste = parseInt(prompt("digite o ultimo numero"));
             var inc = parseInt(prompt("digite o incremento"));
-            for(var i = pos; i <= teste ; i += inc  ) { 
-                       
+            if (pos > teste){
+                for(var i = pos; i >= teste; i -= inc  )
                 TodosOsNumeros = TodosOsNumeros + " " + i; 
-            } 
+            }else{
+                for(var i = pos; i <= teste ; i += inc  )
+                TodosOsNumeros = TodosOsNumeros + " " + i;
+            }
 
             console.log(TodosOsNumeros + " Acabou!");
         }
