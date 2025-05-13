@@ -15,7 +15,7 @@
         function VerificarCarro () {
             var Carro = document.getElementById("Carro").value;
             var Dias = parseFloat(document.getElementById("Dias").value);
-            var Km = parseFloat(document.getElementById("Km").value); 
+            var Km = parseFloat(document.getElementById("Km").value);  
             // carro deo luxo
             var calculodias = Dias * 150;
             // carro comum
@@ -26,9 +26,12 @@
             // carro de luxo
             var calculoKm = Km * 0.30;
             var calculoKm2 = Km * 0.25;
+
             if ("Carro Comum" == Carro && calculokm <= 100){
                 alert("Você escolheu um Carro Comum, você deve pagar pelos seu dias percorridos. " + calculosDias + " e pelos km " + calculokm);
             }
+
+           
 
 
         

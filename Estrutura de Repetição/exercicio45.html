@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function(){
+            var TodosOsNumeros = "";
+            var pos = parseInt(prompt("digite o primeiro numero"));
+            var teste = parseInt(prompt("digite o ultimo numero"));
+            var inc = parseInt(prompt("digite o incremento"));
+            if (pos > teste){
+                for(var i = pos; i >= teste; i -= inc  )
+                TodosOsNumeros = TodosOsNumeros + " " + i; 
+            }else{
+                for(var i = pos; i <= teste ; i += inc  )
+                TodosOsNumeros = TodosOsNumeros + " " + i;
+            }
+
+            console.log(TodosOsNumeros + " Acabou!");
+        }
+    </script>
+</body>
+</html>
