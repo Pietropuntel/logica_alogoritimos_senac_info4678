@@ -7,14 +7,17 @@
 </head>
 <body> <script>
         window.onload = function(){
-            var TodosOsNumeros = "";
-            var numero1 = parseInt(prompt("digite o primeiro numero"));
-            var numero2 = parseInt(prompt("digite o numero"));
-            var numero3 = parseInt(prompt("digite o numero"));
-            var numero4 = parseInt(prompt("digite o numero"));
-            var numero5 = parseInt(prompt("digite o numero"));
-            var numero6 = parseInt(prompt("digite o ultimo numero"));
-            
+            var TodosOsNumeros = 0 ;
+            var calculo = pos % 2;
+            for(var i = 0; i <= 6; i++){
+                var pos = parseInt(prompt(" digite um numero "));
+                if(calculo == 0){
+                 TodosOsNumeros = TodosOsNumeros + pos;   
+                }else{
+                    TodosOsNumeros = TodosOsNumeros + pos;
+                }
+                
+            }
         }
 
 

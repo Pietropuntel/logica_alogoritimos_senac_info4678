@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open exercicio47.html",
+            "file": "c:\\Users\\PIETROSAMUELDOSSANTO\\Documents\\repo\\logica_alogoritimos_senac_info4678\\Estrutura de Repetição\\exercicio47.html"
+        }
+    ]
+}
