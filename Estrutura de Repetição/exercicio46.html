@@ -7,19 +7,21 @@
 </head>
 <body>
     <script>
+
+       
         window.onload = function(){
-            var TodosOsNumeros = "";
-            var calculo = parseInt("TodosOsNumeros" + "i");
-            for(var i = 0; i <= 100 ; i ++)
-            TodosOsNumeros = TodosOsNumeros + " " + i; 
-
-            
-
-
-
+            var TodosOsNumeros = " ";
+            var calculo = TodosOsNumeros / 4;
+            for(var i = 30; i > 0 ; i -- ){
+                if (i%4 == 0){
+                    TodosOsNumeros = TodosOsNumeros + "[" + i + "]" + " ";
+                }else{
+                    TodosOsNumeros = TodosOsNumeros + " " + i ;
+                }
+            }
+            console.log(TodosOsNumeros + " Acabou!");
         }
-        console.log(calculo);
-
+   
 
     </script>
 </body>
