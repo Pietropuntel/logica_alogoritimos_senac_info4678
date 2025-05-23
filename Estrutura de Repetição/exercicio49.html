@@ -7,18 +7,18 @@
 </head>
 <body> <script>
         window.onload = function(){
-            var TodosOsNumeros = 0 ;
+            var TodosOsImpar = 0 ;
+            var TodosOsPares = 0 ;
             for(var i = 0; i <= 6; i++){
-                var calculo = pos % 2;
-                var pos = parseInt(prompt(" Digite um numero "));
-                if(calculo == 0){
-                 TodosOsNumeros = TodosOsNumeros + pos;   
+                var pos = parseInt(prompt(" digite um numero "));
+                if(pos%2 === 0){
+                 TodosOsPares ++;
+
                 }else{
-                    TodosOsNumeros = TodosOsNumeros + pos;
-                }
-                
+                    TodosOsImpar ++;
+                }  
             }
-            console.log(TodosOsNumeros);
+            console.log("numeros impares são " + TodosOsImpar + " numeros pares são " + TodosOsPares);
         }
 
 
