@@ -9,16 +9,21 @@
     <script>
        
         window.onload = function(){
-            var TodosOsNumeros = " ";
-            var calculo = TodosOsNumeros / 4;
-            for(var i = 30; i > 0 ; i -- ){
-                if (i%4 == 0){
-                    TodosOsNumeros = TodosOsNumeros + "[" + i + "]" + " ";
-                }else{
-                    TodosOsNumeros = TodosOsNumeros + " " + i ;
+             var TodosOsNumeros = "";
+             var Maior = 0;
+             var Menor = 0;
+            for(var i = 0; i <= 7; i++){
+                var pos = parseInt(prompt(" Digite um Numero "));
+              
+                if (pos > Maior){
+                    Maior = pos;
                 }
-            }
-            console.log(TodosOsNumeros + " Acabou!");
+                if(pos < Menor ){
+                    Menor = pos;
+                }
+            }  
+            console.log(Maior);
+            console.log(Menor);
         }
    
     </script>

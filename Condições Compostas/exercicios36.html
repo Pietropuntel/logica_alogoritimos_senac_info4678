@@ -6,7 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="Altura" value="">
-    <input type="text" id="Peso" value="">
+<input type="text" id="Pontos" value="">
+    <input type="text" id="Horas" value="">
+    <button onclick="VerificarCarro()">clik em mim</button>
+    </button>
+    <script>
+         function VerificarCarro () {
+            var Pontos = document.getElementById("Pontos").value;
+            var Horas = parseFloat(document.getElementById("Hoaras").value);
+            var calculo = Pontos * 0.05;
+            var dez = 2 + Horas;
+
+            if (Horas <= 10){
+                alert("Pelo visto voce fez " + Horas + " De caminhada, voce vai receber " + dez );
+            }else{
+            }
+
+           
+
+
+        
+        }
+    </script>
 </body>
 </html>
