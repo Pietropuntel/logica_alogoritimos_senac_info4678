@@ -10,15 +10,18 @@
        
         window.onload = function(){
             var TodosOsNumeros = " ";
-            var calculo = TodosOsNumeros / 4;
-            for(var i = 30; i > 0 ; i -- ){
-                if (i%4 == 0){
-                    TodosOsNumeros = TodosOsNumeros + "[" + i + "]" + " ";
-                }else{
-                    TodosOsNumeros = TodosOsNumeros + " " + i ;
+            var NumeroMaior = 0;
+            var NumeroMenor = 0;
+            for( var i = 0; i <= 7; i++){
+                var pos = parseInt(prompt("Digite um Numero !"))
+                if (TodosOsNumeros < pos ){
+                    NumeroMenor ;
+                }if (pos > TodosOsNumeros){
+                    NumeroMaior ++;
                 }
-            }
-            console.log(TodosOsNumeros + " Acabou!");
+                    
+             }
+            console.log("O maior preço é de " + NumeroMaior + " já o menor é de " + NumeroMenor);
         }
    
     </script>
