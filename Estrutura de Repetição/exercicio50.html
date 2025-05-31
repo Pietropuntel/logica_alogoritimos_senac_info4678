@@ -10,20 +10,22 @@
        
         window.onload = function(){
             var TodosOsNumeros = " ";
-            var TodosMaiorQueCinco = 0 ;
-            var TodosOsNumerosDiviciveisPorTres = 0 ; 
+            var TodosMaiorQueCinco = 0 ; 
+            var TodosDiviciveisPorTres = 0 ; 
             for( var i = 0; i <= 20; i++){
-                    var NumeroSorteado = Math.floor(Math.random() * 10) + 1;
-                    TodosOsNumeros = TodosOsNumeros + NumeroSorteado + " ";
-                if (NumeroSorteado > 5){
-                    TodosMaiorQueCinco ++;
-                }if (NumeroSorteado%3 === 0 ){
-                    TodosOsNumerosDiviciveisPorTres ++;
+             var NumeroSorteado = Math.floor(Math.random() * 10) + 1;
+             TodosOsNumeros = TodosOsNumeros + NumeroSorteado + " ";
+                if (NumeroSorteado > 5 ){
+                    TodosMaiorQueCinco ++; 
+                } if (NumeroSorteado%3 === 0)
+                {
+                    TodosDiviciveisPorTres ++;
                 }
             }
             console.log(TodosOsNumeros);
             console.log(TodosMaiorQueCinco);
-            console.log(TodosOsNumerosDiviciveisPorTres);  
+            console.log(TodosDiviciveisPorTres);
+
         }
    
 

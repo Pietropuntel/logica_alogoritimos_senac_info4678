@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        window.onload = function(){
+            window.onload = function(){
+            var TodosOsNumeros = "";
+            var MediaDaIdade = 0;   
+            var DezoitoAnos = 0;
+            var PessoasComCinco = 0;
+            var MaiorIdade = 0;
+            for(var i = 0; i < 10; i++){
+                var pos = parseInt(prompt("Digite a idade da pessoa " + (i + 1)));
+                TodosOsNumeros += pos + " ";
+                
+                MediaDaIdade += pos;
+
+                if(pos >= 18){
+                    MaiorIdade++;
+                }
+                
+                if(pos === 5){
+                    PessoasComCinco++;
+                }
+                
+                if(pos > 18){
+                    DezoitoAnos++;
+                }
+            }
+            MediaDaIdade /= 10; 
+            console.log("Idades: " + TodosOsNumeros);
+            console.log("Média da idade: " + MediaDaIdade);
+            console.log("Número de pessoas com 18 anos ou mais: " + MaiorIdade);
+            console.log("Número de pessoas com exatamente 5 anos: " + PessoasComCinco);
+            console.log("Número de pessoas com mais de 18 anos: " + DezoitoAnos);
+        }
+    }
+
+    </script>
+</body>
+</html>

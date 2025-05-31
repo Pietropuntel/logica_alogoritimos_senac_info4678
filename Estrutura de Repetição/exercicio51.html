@@ -9,19 +9,21 @@
     <script>
        
         window.onload = function(){
-            var TodosOsNumeros = " ";
-            var NumeroMaior = 0;
-            var NumeroMenor = 0;
-            for( var i = 0; i <= 7; i++){
-                var pos = parseInt(prompt("Digite um Numero !"))
-                if (TodosOsNumeros < pos ){
-                    NumeroMenor ;
-                }if (pos > TodosOsNumeros){
-                    NumeroMaior ++;
+             var TodosOsNumeros = "";
+             var Maior = 0;
+             var Menor = 0;
+            for(var i = 0; i <= 7; i++){
+                var pos = parseInt(prompt(" Digite um Numero "));
+              
+                if (pos > Maior){
+                    Maior = pos;
                 }
-                    
-             }
-            console.log("O maior preço é de " + NumeroMaior + " já o menor é de " + NumeroMenor);
+                if(pos < Menor ){
+                    Menor = pos;
+                }
+            }  
+            console.log(Maior);
+            console.log(Menor);
         }
    
     </script>

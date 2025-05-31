@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function(){
+            var arraiDeNumeros = [];
+            var arraiDePosicao = [];
+            for(var i = 0; i <= 14; i++){
+                var pos = (prompt("Digite um Numero !"));
+                arraiDeNumeros[i] = pos;
+               if(pos%10 === 0){ 
+                arraiDePosicao[i] = i;
+               }
+                
+            }
+            console.log(arraiDeNumeros);
+            console.log(arraiDePosicao);
+        }
+    </script>
+</body>
+</html>
