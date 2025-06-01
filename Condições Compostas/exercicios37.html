@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reajuste de Salário</title>
 </head>
 <body>
-    
+    <script>
+        var salario = parseFloat(prompt("Digite o salário atual:"));
+        var genero = prompt("Digite o gênero (M para homem, F para mulher):");
+        var anos = parseInt(prompt("Digite há quantos anos trabalha na empresa:"));
+
+        var novoSalario = salario;
+
+        if (genero === "F" || genero === "f") {
+            if (anos < 15) {
+                novoSalario = salario + (salario * 0.05);
+            } else if (anos >= 15 && anos <= 20) {
+                novoSalario = salario + (salario * 0.12);
+            } else if (anos > 20) {
+                novoSalario = salario + (salario * 0.23);
+            }
+        } else if (genero === "M" || genero === "m") {
+            if (anos < 20) {
+                novoSalario = salario + (salario * 0.03);
+            } else if (anos >= 20 && anos <= 30) {
+                novoSalario = salario + (salario * 0.13);
+            } else if (anos > 30) {
+                novoSalario = salario + (salario * 0.25);
+            }
+        }
+
+        
+        alert("O novo salário é: R$ " + Math.round(novoSalario * 100) / 100);
+    </script>
 </body>
 </html>
