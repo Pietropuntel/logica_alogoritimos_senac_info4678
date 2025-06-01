@@ -16,10 +16,13 @@
             var Horas = parseFloat(document.getElementById("Hoaras").value);
             var calculo = Pontos * 0.05;
             var dez = 2 + Horas;
-
-            if (Horas <= 10){
-                alert("Pelo visto voce fez " + Horas + " De caminhada, voce vai receber " + dez );
-            }else{
+            var total = calculo + dez;
+            if (Pontos >= 20) {
+                alert("Você foi multado em R$ " + total.toFixed(2));
+            } else if (Pontos < 20 && Pontos >= 10) {
+                alert("Você foi multado em R$ " + calculo.toFixed(2));
+            } else {
+                alert("Você não foi multado");
             }
 
            
